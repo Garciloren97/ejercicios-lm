@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="Libros">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element ref="Libro" maxOccurs="unbounded"/>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+
+  <xsd:element name="Libro">
+      <xsd:complexType>
+          <xsd:sequence>
+              <xsd:element name="Autores" type="xsd:string" maxOccurs="unbounded"/>
+              <xsd:element name="AnnoEdicion" type="xsd:decimal"/>
+              <xsd:element name="Titulo" type="xsd:string"/>
+              <xsd:element name="Editorial" type="xsd:string"/>
+          </xsd:sequence>
+      </xsd:complexType>
+  </xsd:element>
+
+</xsd:schema>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Libros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <Libro>
+    <Autores>Antoniou, G</Autores>
+    <Autores>F. van Harmelen</Autores>
+    <AnnoEdicion>2004</AnnoEdicion>
+    <Titulo>A Semantic Web Primer</Titulo>
+    <Editorial>Cambridge, MA: MIT Press</Editorial>
+  </Libro>
+
+  <Libro>
+    <Autores>Daconts, M.C.</Autores>
+    <Autores>L.J. Orbst</Autores>
+    <Autores>K.T. Smith</Autores>
+    <AnnoEdicion>2003</AnnoEdicion>
+    <Titulo>The Semantic Web: A Guide to the Future of XML, Web Services, and Knowledge Management</Titulo>
+    <Editorial>New York: Wiley</Editorial>
+  </Libro>
+
+</Libros>

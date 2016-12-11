@@ -1,0 +1,154 @@
+*{box-sizing: border-box;}  /** las medidas de ancho/alto de cada elemento incluyen contenido, padding y borde, no incluyen el margen **/
+#contenedor1{
+    background-image: url("../images/fondo.jpg");
+    width: 990px;
+    height: 550px;
+    text-align:center;
+    margin:0 auto;
+    overflow-y: auto;
+}
+#cabecera {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 30px;
+    color:white;
+    font-size:40px;
+    float:left;
+}
+#cuadro11 {
+    width: 50px;
+    height: 87px;
+}
+#cuadro11 img{
+    margin-top: 120px;
+}
+#cuadro12 {
+    width:160px;
+}
+#cuadro12 img{
+    width:150px;
+    margin-left: 150px;
+    margin-right: 50px;
+    float:left;
+}
+#cuadro13 {
+    width:500px;
+    margin-right:40px;
+    display:inline-block;               /** utilizo esta propiedad para ver correctamente los cuados 13 y 14 **/
+}
+#cuadro13 p {
+    color:white;
+    font-size: 30px;
+    float:none;
+    line-height: 30px;
+    text-align:center;
+}
+#cuadro13 h5{
+    color:white;
+    text-align: left;
+}
+#cuadro13 button{
+    margin-left: 400px;
+}
+#cuadro14 {display:inline-block;        /** utilizo esta propiedad para ver correctamente los cuados 13 y 14 **/
+    width: 50px;
+    height: 87px;
+}
+#cuadro14 img{
+    margin-top:30px;
+    float:right;
+}
+#contenedor2 {
+    background-color: white;
+    width: 990px;
+    height: 180px;
+    text-align:center;
+    margin:0 auto;
+}
+#cuadro21 {
+    background-color: red;
+    width: 300px;
+    height: 160px;
+    float:left;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    margin-right: 7px;
+}
+#cuadro22 {
+    background-color: red;
+    width: 300px;
+    height: 160px;
+    float:left;
+    margin-top: 2%;
+    margin-bottom: 0px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#cuadro23 {
+    background-color: red;
+    width: 300px;
+    height: 160px;
+    float:left;
+    /**margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1.5%;
+    margin-right: 5%;
+    otra forma de utilizar los valores para los margenes **/
+    margin:2% 30px 0px 7px;
+}
+.cuadro2 p {
+    color:white;
+    font-size: 30px;
+    float:none;
+    line-height: 100px;
+    text-align: center;
+}
+#contenedor3{
+    background-color: white;
+    width: 990px;
+    height: 300px;
+    text-align:center;
+    margin:0 auto;
+}
+#cuadro31 {
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    float:left;
+    margin-top: 0px;
+    margin-bottom: 2%;
+    margin-left: 30px;
+    margin-right: 7px;
+}
+#cuadro32 {
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    float:left;
+    margin-top: 0px;
+    margin-bottom: 2%;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+#cuadro33 {
+    background-color: white;
+    width: 300px;
+    height: 280px;
+    float:left;
+    /**margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1.5%;
+    margin-right: 5%;**/
+    margin:0px 30px 2% 7px;
+}
+.cuadro3 p {
+    color:black;
+    font-size: 30px;
+    float:none;
+    line-height: 30px;
+    text-align:center;
+}
+.cuadro3 h5{
+    text-align: left;
+}

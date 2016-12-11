@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE game[
+<!ELEMENT game (teams+, goals*, cards*)>
+<!ATTLIST game score CDATA #REQUIRED>
+<!ELEMENT teams (team+)>
+<!ELEMENT team (name)>
+<!ATTLIST team home (local|visitante) "local">
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT goals (goal+)>
+<!ELEMENT goal (player)>
+<!ATTLIST goal  time CDATA #REQUIRED
+                type CDATA #IMPLIED>
+<!ELEMENT player (#PCDATA)>
+<!ELEMENT cards (card+)>
+<!ELEMENT card (player_name)>
+<!ATTLIST card colour (yellow|red) "yellow">
+<!ELEMENT player_name (#PCDATA)>
+]>
+
+<game score="0-2">
+  <teams>
+    <team home="local">
+      <name> Barcelona </name>
+    </team>
+    <team home="visitante">
+      <name> Sevilla </name>
+    </team>
+  </teams>
+  <goals>
+    <goal time="10" type="penalty">
+      <player> Vitolo </player>
+    </goal>
+    <goal time="70">
+      <player> Mudo Vazquez </player>
+    </goal>
+  </goals>
+  <cards>
+    <card colour="red">
+      <player_name> Messi </player_name>
+    </card>
+    <card colour="yellow">
+      <player_name> Luis Suarez </player_name>
+    </card>
+  </cards>
+</game>

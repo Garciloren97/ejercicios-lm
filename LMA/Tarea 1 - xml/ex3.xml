@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cookbook>
+  <recipe>
+    <recipe_name> Tortilla francesa </recipe_name>
+    <ingredients>
+      <name> Huevo </name>
+      <quantity> 2 </quantity>
+    </ingredients>
+    <ingredients>
+      <name> Jamon en lonchas </name>
+      <quantity> 3 lonchas </quantity>
+    </ingredients>
+    <ingredients>
+      <name> Queso en lonchas </name>
+      <quantity> 2 lonchas </quantity>
+    </ingredients>
+    <all_steps>
+      <step> En un cuenco, batimos los huevos </step>
+      <step> En una sartén, echar aceite y poner a calentar </step>
+      <step> Troceamos lonchas de jamon y queso </step>
+      <step> Vertemos el huevo batido en la sarten </step>
+      <step> Añadimos tambien el jamon y el queso </step>
+      <step> Dejamos que el huevo cuaje </step>
+      <step> Ya tenemos una tortilla </step>
+    </all_steps>
+  </recipe>
+  <recipe>
+    <recipe_name> Galletas sin gluten </recipe_name>
+    <ingredients>
+      <name> Harina de maiz </name>
+      <quantity> 200 gramos </quantity>
+    </ingredients>
+    <ingredients>
+      <name> Azucar blanco </name>
+      <quantity> 75 gramos </quantity>
+    </ingredients>
+    <ingredients>
+      <name> Mantequilla </name>
+      <quantity> 80 gramos </quantity>
+    </ingredients>
+    <ingredients>
+      <name> Huevo </name>
+      <quantity> 1  </quantity>
+    </ingredients>
+    <all_steps>
+      <step> Batir huevo con el azucar </step>
+      <step> Agregar huevo y seguir mezclando </step>
+      <step> Agregar harina y amasar </step>
+      <step> Debe quedar una masa compacta </step>
+      <step> Estirar la masa sobre superficie plana </step>
+      <step> Recortar la masa con un molde </step>
+      <step> Horneamos 10 minutos a 150º  </step>
+      <step> Ya tenemos galletas sin gluten </step>
+    </all_steps>
+  </recipe>
+</cookbook>

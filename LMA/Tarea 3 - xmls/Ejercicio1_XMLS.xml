@@ -1,0 +1,51 @@
+<?xml	version="1.0" encoding="UTF-8"?>
+<Business xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+  xsi:noNamespaceSchemaLocation="XMLSchemaMembers.xsd">
+  <members>
+    <member>
+      <member_name>Chris Smith</member_name>
+      <years_of_membership>4</years_of_membership>
+    </member>
+    <member>
+      <member_name>Judi Zimmerman</member_name>
+      <years_of_membership>5</years_of_membership>
+    </member>
+    <member>
+      <member_name>Michael Calder</member_name>
+      <years_of_membership>3</years_of_membership>
+    </member>
+  </members>
+</Business>
+
+<?xml	version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Business">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="members" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="members">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="member" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="member">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="member_name" />
+        <xs:element ref="years_of_membership"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element>
+    <xs:element name="member_name" type="xs:string"/>
+    <xs:element name="years_of_membership" type="xs:decimal"/>
+  </xs:element>
+</xs:schema>

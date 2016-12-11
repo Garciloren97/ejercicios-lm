@@ -1,0 +1,27 @@
+<?xml	version="1.0" encoding="UTF-8"?>
+<!DOCTYPE	cateneMontuose[
+<!ELEMENT	cateneMontuose	(catenaMontuosa*)>
+<!ELEMENT	catenaMontuosa	(monte+)>
+<!ELEMENT	monte	(nome,	regione?,	altezza?)>
+<!ELEMENT	nome	(#PCDATA)>
+<!ELEMENT	regione	(#PCDATA)>
+<!ELEMENT	altezza	(#PCDATA)>
+<!ATTLIST	altezza	unitaMisura	CDATA	#REQUIRED>
+]>
+
+
+
+<cateneMontuose>
+  <catenaMontuosa>
+    <monte>
+      <nome>	Monte	Bianco	</nome>
+      <regione>	Valle	d’Aosta	</regione>
+      <altezza	unitaMisura="metri">4810</altezza>
+    </monte>
+  </catenaMontuosa>
+  <catenaMontuosa>
+    <monte>
+      <nome>Gransasso</nome>
+    </monte>
+    </catenaMontuosa>
+</cateneMontuose>

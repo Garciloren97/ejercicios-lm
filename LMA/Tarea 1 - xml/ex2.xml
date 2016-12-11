@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bus_sevilla>
+	<route>
+		<name> Plaza Magdalena-Triana </name>
+		<stop>
+			<stop_name> Plaza Magdalena </stop_name>
+			<time> 0 </time>
+		</stop>
+		<stop>
+			<stop_name> Paseo de Colon </stop_name>
+			<time> 3' </time>
+		</stop>
+		<stop>
+			<stop_name> Plaza de Cuba </stop_name>
+			<time> 7' </time>
+		</stop>
+		<stop>
+			<stop_name> Republica Argentina </stop_name>
+			<time> 10' </time>
+		</stop>
+		<stop>
+			<stop_name> Esperanza de Triana </stop_name>
+			<time> 12' </time>
+		</stop>
+		<stop>
+			<stop_name> Juan Diaz de Solis </stop_name>
+			<time> 15' </time>
+		</stop>
+		<stop>
+			<stop_name> Alvar Nuñez </stop_name>
+			<time> 17' </time>
+		</stop>		<stop>
+			<stop_name> San Jacinto </stop_name>
+			<time> 20' </time>
+		</stop>
+		<stop>
+			<stop_name> Pajes del Corro </stop_name>
+			<time> 22' </time>
+		</stop>
+		<stop>
+			<stop_name> Plaza de Cuba </stop_name>
+			<time> 25' </time>
+		</stop>
+		<stop>
+			<stop_name> Plaza de Colon </stop_name>
+			<time> 27' </time>
+		</stop>
+		<stop>
+			<stop_name> Plaza Magdalena </stop_name>
+			<time> 31' </time>
+		</stop>
+	</route>
+</bus_sevilla>
