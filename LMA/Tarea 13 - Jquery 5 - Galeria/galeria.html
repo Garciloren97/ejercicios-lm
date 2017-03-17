@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>Galeria de coches antiguos</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        
+        <div id="left">
+            <img id="left_arrow" src="images/left_arrow.png">
+        </div>
+
+        <div id="container_img">
+            <img id="img1" class="img" src="images/imagen1.jpg">
+            <img  class="img" src="images/imagen2.jpg">
+            <img  class="img" src="images/imagen3.jpg">
+            <img  class="img" src="images/imagen4.jpg">
+            <img  class="img" src="images/imagen5.jpg">
+            <img  class="img" src="images/imagen6.jpg">
+        </div>
+
+        <div id="right">
+            <img id="right_arrow" src="images/right_arrow.png">
+        </div>
+        
+    </div>
+    
+    <script>
+        $(function(){
+            $(".img").hide();
+            $("#img1").show();
+            
+            $("#right_arrow").click(function(){
+                if ($("#container_img img:visible").next().length==1){
+                    $("#container_img img:visible").hide("slow").next().show("slow");    
+                } 
+                else {
+                    $("#container_img img:visible").hide("slow").parent().children().first().show("slow");
+                };
+            });
+            
+            $("#left_arrow").click(function(){
+                if ($("#container_img img:visible").prev().length==1){
+                    $("#container_img img:visible").hide("slow").prev().show("slow");    
+                } 
+                else {
+                    $("#container_img img:visible").hide("slow").parent().children(":last").show("slow");                    
+                };
+            });            
+
+        });
+    </script>
+    
+</body>
+</html>

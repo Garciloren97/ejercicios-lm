@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>jQuery Animate Example</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="padre">
+        <div class="coche">
+            <h2 class="nombre_coche">Hennessey Venom GT Spyder</h2>
+            <div class="info_coche">
+                <img src="images/venon.jpg" class="imagen">
+                <p class="texto"> Descapotable y poderoso. La mejor combinación que se puede encontrar en el mundo de los coches de lujo. 
+                    Es que a la hora de preguntar, lo más seguro que todos concuerden que no hay mejor sensación que correr 
+                    a más de 300 km/h con el aire en la cara.
+
+                    Este coupé de dos puertas que fue exhibido por primera vez en 2010 es fabricado en Inglaterra y en Estados Unidos, 
+                    presentando un motor de aluminio V8 biturbo de 6.2 litros y 1.244 HP, manteniendo así una relación potencia/peso de 1 HP/kg.
+
+                    Sólo 10 unidades se fabrican al año como máximo. Esto lleva al Hennessey Venom GT Spyder a ser uno de los deportivos más caros del mundo. 
+                </p>
+            </div>
+        </div>
+        
+        <div class="coche">
+            <h2 class="nombre_coche">Koenigsegg Agera R.</h2>
+            <div class="info_coche">
+                <img src="images/agera.jpg" class="imagen">
+                <p class="texto"> Es uno de los cocjes de lujo más llamativos del mundo por diseño, aerodinámica, 
+                lujosa presencia y una potencia sorprendente.
+
+                Al igual que el Lamborghini Reventón, el Koenigsegg Agera R tiene un precio de US$1,6 millones e incorpora 
+                un frontal de carbono, llantas de fibra de carbono y números que nos dejan más que enamorados: el modelo 2013 
+                acelera hasta los 440 km/h y le toman 14,53 segundos en llegar a los 300 km/h.
+
+                Por diseño, el Koenigsegg Agera R es bastante minimalista, donde todo lo visible tiene relación con un fin, 
+                que es la aerodinámica y la potencia. Nada extrafalario, sólo lo necesario. Donde no se escatimó en gastos 
+                fue en el interior: fibra de carbono, metales preciosos y cuero de alta calidad configuran el espacio para el 
+                conductor y pasajero, complementado por navegación por satélite.
+                </p>
+            </div>
+        </div>
+        <div class="coche">
+            <h2 class="nombre_coche">Lamborghini Reventón</h2>
+            <div class="info_coche">
+                <img src="images/lamborghini.png" class="imagen">
+                <p class="texto"> Este espectacular superdeportivo no es sólo uno de los autos más caros del mundo, sino que también uno de los más potentes jamás fabricados. 
+                    Alcanza los 100 km/h en 3,3 segundos y puede correr hasta los 339 km/h a través de su caja de 6 velocidades.
+
+                    El precio de este vehiculo de lujo se justifica ya que solo se fabrican 20 unidades al año por lo tanto el precio de este coche aumenta dado que es muy exclusivo.
+                </p>
+            </div>
+        </div>
+        <div class="coche">
+            <h2 class="nombre_coche">LaFerrari</h2>
+            <div class="info_coche">    
+                <img src="images/ferrari.png" class="imagen">
+                <p class="texto"> Estar en la lista de los autos más caros del mundo no es cualquier cosa. Y si bien el precio de la mayoría va por características, también va       por historia. El Ferrari LaFerrari es el sucesor del mítico Ferrari Enzo, uno de los modelos más ‘hot’ del mundo automotor y uno de los más         recordados por diseño, velocidad y exclusividad.
+
+                    El LaFerrari está equipado con un control dinámico integrado por primera vez en un Ferrari, con un sistema aerodinámico e HY-KERS activo, logrando una aerodinámica sin comprometer ninguna parte del vehículo.
+
+                    Cuenta con un motor V12 de 6.3 litros, cuenta también con un motor eléctrico de 163 HP, con lo que se llega a la potencia máxima de 963 HP. Todo esto le permite al Ferrari LaFerrari una velocidad máxima sobre 350 km/h, y acelerar de 0 a 100 km/h en menos de 3 segundos.
+                </p>
+            </div>
+        </div>
+        <div class="coche">
+            <h2 class="nombre_coche">Maybach Exelero</h2>
+            <div class="info_coche">
+                <img src="images/maybach.png" class="imagen">
+                <p class="texto"> Único en el mundo, el Top 1 de esta lista de los coches de lujo más caros del mundo.
+                    Se trata del Maybach Exelero, del cual existe una sola unidad en todo el mundo. Este vehiculo de lujo con un motor V12 twin-turbo de 700 HP, alcanza una velocidad máxima de 351 km/h y acelera de 0 a 100 km/h en 4,4 segundos.
+
+                    Sí, el Maybach Exelero tal vez no es el más rápido del mundo pero su precio ya rompe todas las marcas. Y tiene dueño. En 2011, el rapero Birdman se hizo con el Maybach Exelero.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function(){
+            $(".coche").click(function(){
+                if($(this).hasClass('abierto')){
+                    /* cierro el elemento de clase abierto */
+                    $(".abierto").animate(
+                        {height:'60px'                        
+                        },1000);            
+                    $(".abierto > div").animate(
+                        {opacity:0},
+                        1000);
+                    $(".abierto").removeClass("abierto");
+                }
+                else {
+                    /* cierro el elemento de clase abierto */
+                    $(".abierto").animate(
+                        {height:'60px'                        
+                        },1000);            
+                    $(".abierto > div").animate(
+                        {opacity:0},
+                        1000);
+                    $(".abierto").removeClass("abierto");
+
+                    /* abro el elemento pulsado y le añado clase abierto */
+                    $(this).animate(
+                        {height:'400px'                        
+                        },1000);
+                    $(this).children("div").animate(
+                        {opacity:1                        
+                        },1000);
+                    $(this).addClass("abierto");
+                }
+            });
+        });
+        
+        
+        
+    </script>
+    
+</body>
+</html>

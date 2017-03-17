@@ -1,0 +1,23 @@
+#container {
+    display:inline-flex;
+}
+
+#left {
+    width:130px;
+    left:300px;
+    top:400px;
+    position:relative;
+}
+
+#right {
+    width:130px;    
+    left:540px;
+    top:400px;
+    position:relative;
+}
+
+#container_img {
+    left:420px;
+    top:200px;
+    position: relative;
+}
