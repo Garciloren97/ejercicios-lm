@@ -1,0 +1,52 @@
+.nivel1 { /*contenedor del nivel 1 */
+    margin-top:50px;
+    padding:10px;
+    width:125px;
+}
+
+.nivel1 > div { /*elementos dentro del contenedor de nivel 1 */
+    background-color:aqua;
+    font:black;
+    font-weight:bold;
+    padding-top:50px;
+    height:60px;
+    text-align: center;
+    border:1px solid black;
+   
+}
+
+.nivel1 > div > div { /*contenedor de nivel 2 */
+    width:120px;
+    left:124px;
+    top:-30px;
+    position: relative;
+}
+
+.nivel1 > div > div > div { /* elementos dentro del contenedor de nivel 2 */
+    background-color:yellow;
+    font:black;
+    font-size:bold;
+    padding-top:30px;
+    height:50px;
+    text-align: center;
+    border:1px solid black;
+       
+}
+
+.nivel1 > div > div > div > div { /* contenedor de nivel 3 */
+    width:120px;
+    left:119px;
+    top:-30px;
+    position: relative;
+}
+
+.nivel1 > div > div > div > div > div { /* elementos dentro del contenedor de nivel 3 */
+    background-color:red;
+    font:black;
+    font-size:bold;
+    height:30px;
+    padding-top:20px;
+    text-align: center;
+    border:1px solid black;
+       
+}
